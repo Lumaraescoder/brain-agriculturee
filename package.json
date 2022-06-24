@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "test": "jest -c test/jest.config.js",
@@ -11,7 +11,8 @@
     "cypress:run": "cypress run --config video=false",
     "cypress:test": "start-server-and-test start http://localhost:3000 cypress:run",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "mock": "json-server --watch ./src/mock/db.js"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -22,6 +23,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "cross-fetch": "^3.1.5",
     "next": "^12.1.6",
     "next-compose-plugins": "^2.2.1",
     "react": "17.0.2",
@@ -56,6 +58,7 @@
     "identity-obj-proxy": "^3.0.0",
     "isomorphic-unfetch": "^3.1.0",
     "jest": "^26.6.3",
+    "json-server": "^0.17.0",
     "nock": "^13.0.6",
     "postcss": "^8.2.4",
     "prettier": "^2.7.1",
