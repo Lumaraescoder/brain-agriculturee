@@ -7,10 +7,9 @@ import Table from "@components/productors/Table";
 
 const Productors: React.FC = () => {
   const dispatch = useDispatch();
-
   const { productors } = useAppSelector((state) => state.productorReducer);
   
-  const newArray = productors.map((item) =>
+  const newArray = productors?.map((item) =>
     Object.assign({}, item, { edit: "editar", delete: "delete" })
   );
 
@@ -23,7 +22,6 @@ const Productors: React.FC = () => {
 
   return (
     <>
-      <Header />
       <Table data={newArray} />
     </>
   );
