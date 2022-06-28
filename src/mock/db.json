@@ -49,17 +49,17 @@
       "crops": "Sugar Cane"
     },
     {
+      "id": 5,
       "fullname": "DeadPool",
       "farm_name": "Palmeiras ricardo",
       "city": "São paulo",
       "estate": "São paulo",
       "cpf": "45551978899",
-      "total_agricultural_area": "200",
-      "total_area_hectares_farm": "",
+      "total_area_hectares_farm": "200",
+      "total_agricultural_area": "100",
       "total_vegetabel_area": "100",
       "crops": "Sugar Cane",
-      "total_hectares": "250",
-      "id": 7
+      "total_hectares": "250"
     }
   ]
 }
