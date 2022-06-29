@@ -19,3 +19,23 @@ export const AddProductors = createAsyncThunk(
   }
 )
 
+export const getProductorId = createAsyncThunk(
+  'productor/getProductorId',
+  async (id: number) => {
+    const response = await axiosInstance.get(`productors/${id}`);
+    return response.data;
+  },
+);
+
+
+export const editProductor = createAsyncThunk(
+  'productors/editProductor',
+  async (data: IProductorsState) => {
+    const response = await axiosInstance.put(
+      `productors/${data.id}`,
+      data,
+    );
+    return response.data;
+  }
+)
+
