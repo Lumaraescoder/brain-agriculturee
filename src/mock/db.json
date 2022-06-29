@@ -1,42 +1,6 @@
 {
   "productors": [
     {
-      "fullname": "Steve",
-      "cpf": "17079879828",
-      "farm_name": "novo sol",
-      "city": "São Paulo",
-      "estate": "São Paulo",
-      "total_area_hectares_farm": "150",
-      "total_agricultural_area": "150",
-      "total_vegetabel_area": "80",
-      "crops": "aipim",
-      "id": 1
-    },
-    {
-      "fullname": "Lucas",
-      "cpf": "98673115078",
-      "farm_name": "Por do Sol",
-      "city": "São Paulo",
-      "estate": "São Paulo",
-      "total_area_hectares_farm": "400",
-      "total_agricultural_area": "400",
-      "total_vegetabel_area": "200",
-      "crops": "Soy",
-      "id": 2
-    },
-    {
-      "fullname": "Ann",
-      "cpf": "50004031008",
-      "farm_name": "Agro vesdsd",
-      "city": "Sao Paulo",
-      "estate": "São paulo",
-      "total_area_hectares_farm": "97",
-      "total_agricultural_area": "97",
-      "total_vegetabel_area": "70",
-      "crops": "Coffe",
-      "id": 3
-    },
-    {
       "fullname": "Goku",
       "cpf": "50004031008",
       "farm_name": "Palmeiras ",
