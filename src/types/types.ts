@@ -1,6 +1,6 @@
 
 export interface IProductorsState {
- id?: number;
+ id?: number | any; 
  fullname: string;
  cpf: string;
  farm_name: string;
@@ -11,7 +11,7 @@ export interface IProductorsState {
  total_vegetabel_area: string;
  crops: string;
 }
-export interface IInitialProductorState {
+export interface IInitialProductorState { 
  productors: IProductorsState[];
  loading: boolean;
  success?: boolean;
