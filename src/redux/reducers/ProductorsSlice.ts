@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { EditProductor } from "src/schemas/registerSchema";
 import { IInitialProductorState } from "src/types/types";
 import { number } from "yup";
-import { editProductor, getAllProductors, getProductorId } from "./ProductorsThunk";
+import { deleteProductor, editProductor, getAllProductors, getProductorId } from "./ProductorsThunk";
 
 const initialState: IInitialProductorState = {
   productors: [],
@@ -26,6 +26,10 @@ const productorsSlice = createSlice({
       });
       builder
       .addCase(editProductor.fulfilled, (state, action) => {
+        state.productors = action.payload;
+      });
+      builder
+      .addCase(deleteProductor.fulfilled, (state, action) => {
         state.productors = action.payload;
       });
   },

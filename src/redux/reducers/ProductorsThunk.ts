@@ -39,3 +39,13 @@ export const editProductor = createAsyncThunk(
   }
 )
 
+export const deleteProductor = createAsyncThunk(
+  'productors/deleteProductor',
+  async (id: number) => {
+    const response = await axiosInstance.delete(
+      `productors/${id}`,
+    );
+    return response.data;
+  }
+)
+

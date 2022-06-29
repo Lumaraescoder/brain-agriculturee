@@ -35,4 +35,5 @@ export interface Data {
 
 export interface TableProps {
  data: Data[];
+ onDelete: (id: any) => void;
 }

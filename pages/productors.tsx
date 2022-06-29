@@ -2,8 +2,9 @@ import { Header } from "@components/header";
 import { useAppSelector } from "@redux/store/configureStore";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getAllProductors } from "@redux/reducers/ProductorsThunk";
+import { deleteProductor, getAllProductors } from "@redux/reducers/ProductorsThunk";
 import Table from "@components/productors/Table";
+import router from "next/router";
 
 const Productors: React.FC = () => {
   const dispatch = useDispatch();
@@ -21,9 +22,14 @@ const Productors: React.FC = () => {
     getData();
   }, []);
 
+  const onDelete = async (id: number) => {
+    dispatch(deleteProductor(id));
+    router.reload();
+  };
+
   return (
     <>
-      <Table data={newArray} />
+      <Table data={newArray} onDelete={onDelete}  />
     </>
   );
 };

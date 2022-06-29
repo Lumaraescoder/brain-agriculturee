@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { TableProps } from "src/types/types";
 
-export const Table = ({ data }: TableProps) => {
+export const Table = ({ data, onDelete }: TableProps) => {
   return (
     <div className="bg-white p-8 rounded-md w-full">
       <div className=" flex items-center justify-between pb-6">
@@ -145,7 +145,7 @@ export const Table = ({ data }: TableProps) => {
                                 key={value.id}
                                 href={`/productors/${value.id}`}
                               >
-                              {value.edit}
+                                {value.edit}
                               </Link>
                             </p>
                           </div>
@@ -154,14 +154,11 @@ export const Table = ({ data }: TableProps) => {
                       <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                         <div className="flex items-center">
                           <div className="ml-1">
-                            <p className="text-gray-900 whitespace-no-wrap">
-                              <Link
-                                key={value.id}
-                                href={`/productors/${value.id}`}
-                              >
+                            <button onClick={() => onDelete(value.id)}>
+                              <p className="text-gray-900 whitespace-no-wrap">
                                 {value.delete}
-                              </Link>
-                            </p>
+                              </p>
+                            </button>
                           </div>
                         </div>
                       </td>
