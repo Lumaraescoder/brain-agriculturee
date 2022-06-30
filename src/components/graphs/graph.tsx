@@ -1,6 +1,5 @@
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
-import { string } from "yup/lib/locale";
 
 export interface GraphDataValues {
   name: string;
