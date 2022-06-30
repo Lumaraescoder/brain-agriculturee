@@ -11,7 +11,6 @@
       "total_agricultural_area": 300,
       "total_vegetabel_area": 170,
       "soy": "Soy",
-      "wheat": "Wheat", 
       "corn": "Corn", 
       "cane": "Sucar Cane"
     },
@@ -27,7 +26,6 @@
       "total_vegetabel_area": 100,
       "soy": "Soy",
       "wheat": "Wheat", 
-      "corn": "Corn", 
       "cane": "Sucar Cane"
     },
     {
@@ -39,7 +37,6 @@
       "cpf": "45551978899",
       "total_area_hectares_farm": 200,
       "total_agricultural_area": 100,
-      "total_vegetabel_area": 100,
       "soy": "Soy",
       "wheat": "Wheat", 
       "cane": "Sucar Cane"

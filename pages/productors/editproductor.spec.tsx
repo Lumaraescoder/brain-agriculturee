@@ -14,7 +14,7 @@ describe("Wrapper component testing with testing-library", () => {
   it("renders without crashing", () => {
     expect(component).toBeTruthy();
   });
-  
+
   it('Shows "Hello world!"', () => {
     store = mockStore(initialState);
     const { getByText } = render(

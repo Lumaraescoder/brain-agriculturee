@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { EditProductor } from "src/schemas/registerSchema";
+import { EditProductor } from "src/schemas/Schemas"
 import { IInitialProductorState } from "src/types/types";
 import { number } from "yup";
 import { deleteProductor, editProductor, getAllProductors, getProductorId, AddProductors } from './ProductorsThunk';
@@ -20,19 +20,19 @@ const productorsSlice = createSlice({
         state.productors = action.payload;
       })
       .addCase(getAllProductors.rejected, (state, action) => { })
-      builder
+    builder
       .addCase(getProductorId.fulfilled, (state, action) => {
         state.productors = action.payload;
       });
-      builder
+    builder
       .addCase(AddProductors.fulfilled, (state, action) => {
         state.productors = action.payload;
       });
-      builder
+    builder
       .addCase(editProductor.fulfilled, (state, action) => {
         state.productors = action.payload;
       });
-      builder
+    builder
       .addCase(deleteProductor.fulfilled, (state, action) => {
         state.productors = action.payload;
       });

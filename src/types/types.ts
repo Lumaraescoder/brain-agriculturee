@@ -1,6 +1,6 @@
 
 export interface IProductorsState {
- id?: number;
+ id?: number | any; 
  fullname: string;
  cpf: string;
  farm_name: string;
@@ -28,15 +28,15 @@ export interface Data {
  farm_name: string;
  city: string;
  estate: string;
+ soy: string;
+ wheat: string;
+ corn: string;
+ cane: string;
  total_area_hectares_farm: number;
  total_agricultural_area: number;
  total_vegetabel_area: number;
  edit: string;
  delete: string;
- soy: string;
- wheat: string;
- corn: string;
- cane: string;
 }
 
 export interface TableProps {
