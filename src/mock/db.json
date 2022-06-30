@@ -1,0 +1,63 @@
+{
+  "productors": [
+    {
+      "fullname": "Goku",
+      "cpf": "50004031008",
+      "farm_name": "Palmeiras ",
+      "city": "São Paulo",
+      "estate": "Bahia",
+      "total_area_hectares_farm": 300,
+      "total_agricultural_area": 280,
+      "total_vegetabel_area": 170,
+      "soy": "Soy",
+      "wheat": "Soy",
+      "corn": "Corn",
+      "cane": "Sucar Cane",
+      "id": 1
+    },
+    {
+      "cane": "Sucar Cane",
+      "corn": "Corn",
+      "wheat": "Soy",
+      "soy": "Soy",
+      "total_vegetabel_area": 130,
+      "total_agricultural_area": 300,
+      "total_area_hectares_farm": 300,
+      "estate": "São Paulo",
+      "city": "São paulo",
+      "cpf": "45551978899",
+      "fullname": "Lucas",
+      "farm_name": "Palmeiras ricardo",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "fullname": "DeadPool",
+      "farm_name": "Palmeiras ricardo",
+      "city": "São paulo",
+      "estate": "Pernambuco",
+      "cpf": "45551978899",
+      "total_area_hectares_farm": 200,
+      "total_agricultural_area": 100,
+      "total_vegetabel_area": 100,
+      "soy": "Soy",
+      "wheat": "Wheat",
+      "cane": "Sucar Cane"
+    },
+    {
+      "id": 4,
+      "fullname": "DeadPool",
+      "farm_name": "Palmeiras ricardo",
+      "city": "São paulo",
+      "estate": "Acre",
+      "cpf": "45551978899",
+      "total_area_hectares_farm": 200,
+      "total_agricultural_area": 100,
+      "total_vegetabel_area": 100,
+      "soy": "Soy",
+      "wheat": "Wheat",
+      "corn": "Corn",
+      "cane": "Sucar Cane"
+    }
+  ]
+}

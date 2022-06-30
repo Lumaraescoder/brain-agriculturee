@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import counterSlice from "../reducers/nodes";
+import productorReducer from "../reducers/ProductorsSlice";
+import appReducer from "../reducers/ProductorsSlice";
 
-const rootReducer = combineReducers({
- counterSlice,
+export const rootReducer = combineReducers({
+ productorReducer,
+ appReducer,
 });
 export const store = configureStore({
  reducer: rootReducer,
