@@ -14,6 +14,7 @@ export const AddProductors = createAsyncThunk(
   'productors/AddProductors',
   async (data: IProductorsState) => {
     const response = await axiosInstance.post('productors', data)
+    console.log(response)
     console.log(response.data)
     return response.data;
   }

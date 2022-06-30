@@ -21,6 +21,7 @@ export function RegisterProductors() {
   const onSubmit = (data: IProductorsState) => {
     dispatch(AddProductors(data));
     router.push('/');
+    console.log(data,"===")
   };
   return {
     register,

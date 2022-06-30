@@ -1,10 +1,6 @@
 
 export interface IProductorsState {
- cane: string;
- corn: string;
- wheat: string;
- soy: string;
- id?: number | any; 
+ id?: number;
  fullname: string;
  cpf: string;
  farm_name: string;
@@ -13,7 +9,10 @@ export interface IProductorsState {
  total_area_hectares_farm: number;
  total_agricultural_area: number;
  total_vegetabel_area: number;
- 
+ cane: string;
+ corn: string;
+ wheat: string;
+ soy: string;
 }
 export interface IInitialProductorState { 
  productors: IProductorsState[];
@@ -29,15 +28,15 @@ export interface Data {
  farm_name: string;
  city: string;
  estate: string;
- soy: string;
- wheat: string;
- corn: string;
- cane: string;
  total_area_hectares_farm: number;
  total_agricultural_area: number;
  total_vegetabel_area: number;
  edit: string;
  delete: string;
+ soy: string;
+ wheat: string;
+ corn: string;
+ cane: string;
 }
 
 export interface TableProps {
