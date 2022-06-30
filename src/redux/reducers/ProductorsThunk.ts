@@ -1,5 +1,5 @@
+import { axiosInstance } from '../../api/axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axiosInstance from 'src/api/api';
 import { IProductorsState } from 'src/types/types';
 
 export const getAllProductors = createAsyncThunk(

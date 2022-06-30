@@ -1,5 +1,5 @@
-import Graphs from "@components/graphs/graph";
-import { getAllProductors } from "@redux/reducers/ProductorsThunk";
+import Graphs from "../graphs/graph"
+import { getAllProductors } from '../../redux/reducers/ProductorsThunk'
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {
@@ -10,7 +10,7 @@ import {
   SoyData,
   VegetabelArea,
   WheatData,
-} from "src/helpers/helpers";
+} from "../../helpers/helpers";
 
 export const Main: React.FC = () => {
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ export const Main: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+          <div className="w-full md:w-1/2 xl:w-1/6 p-6">
             <div className="bg-gradient-to-b from-green-200 to-green-100 border-b-4 border-green-600 rounded-lg shadow-xl p-5">
               <div className="flex flex-row items-center">
                 <div className="flex-shrink pr-4">
@@ -66,7 +66,7 @@ export const Main: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 xl:w-1/3 p-6 ml-11">
+          <div className="w-full md:w-1/ xl:w-1/5 p-9 ml-11">
             <div className="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5">
               <div className="flex flex-row items-center">
                 <div className="flex-shrink pr-4">
@@ -107,7 +107,7 @@ export const Main: React.FC = () => {
               <div className="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2">
                 <h2 className="font-bold uppercase text-gray-600">Cultive</h2>
               </div>
-              <div className="p-5">
+              <div className="p-5 ml-11">
                 <Graphs data={culture} />
               </div>
             </div>
@@ -124,7 +124,7 @@ export const Main: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+          <div className="w-full   ml-11 md:w-1/2 xl:w-1/3 p-6">
             <div className="bg-white border-transparent rounded-lg shadow-xl">
               <div className="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2">
                 <h2 className="font-bold uppercase text-gray-600">

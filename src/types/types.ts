@@ -13,6 +13,7 @@ export interface IProductorsState {
  total_area_hectares_farm: number;
  total_agricultural_area: number;
  total_vegetabel_area: number;
+ 
 }
 export interface IInitialProductorState { 
  productors: IProductorsState[];
@@ -28,6 +29,10 @@ export interface Data {
  farm_name: string;
  city: string;
  estate: string;
+ soy: string;
+ wheat: string;
+ corn: string;
+ cane: string;
  total_area_hectares_farm: number;
  total_agricultural_area: number;
  total_vegetabel_area: number;

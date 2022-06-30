@@ -1,4 +1,4 @@
-import { useAppSelector } from "@redux/store/configureStore";
+import { useAppSelector } from "../../src/redux/store/configureStore";
 
 export function GraphDataByEstate() {
  const { productors } = useAppSelector((state) => state.productorReducer);

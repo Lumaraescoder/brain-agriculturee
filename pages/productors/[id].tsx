@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Alert from "@mui/material/Alert";
-import { editProductor } from "@redux/reducers/ProductorsThunk";
+import { editProductor } from "../../src/redux/reducers/ProductorsThunk";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { IProductorsState } from "src/types/types";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { EditProductor } from "src/schemas/registerSchema";
+import { EditProductor } from "../../src/schemas/registerSchema";
 import { useRouter } from "next/router";
-import { useAppSelector } from "@redux/store/configureStore";
+import { useAppSelector } from "../../src/redux/store/configureStore";
 import { setTimeout } from "timers";
 
 const EditProductorss: React.FC = () => {
   const router = useRouter();
-  const id = router.query.id;
+  const id = router?.query.id
   const dispatch = useDispatch();
   const productors = useAppSelector(
     (state) => state.productorReducer.productors
@@ -33,7 +33,6 @@ const EditProductorss: React.FC = () => {
     setTimeout(function () {
       router.reload();
     }, 1000);
-    router.push('/')
   };
 
   return (

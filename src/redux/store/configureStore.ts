@@ -3,7 +3,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import productorReducer from "../reducers/ProductorsSlice";
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
  productorReducer,
 });
 export const store = configureStore({

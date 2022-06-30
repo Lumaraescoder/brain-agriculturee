@@ -7,25 +7,25 @@ import { RegisterProductor } from "src/schemas/registerSchema";
 import router, { useRouter } from "next/router";
 
 export function RegisterProductors() {
- const dispatch = useDispatch();
- const router = useRouter();
+  const dispatch = useDispatch();
+  const router = useRouter();
 
- const {
-   register,
-   handleSubmit,
-   formState: { errors },
- } = useForm<IProductorsState>({
-   resolver: yupResolver(RegisterProductor),
- });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IProductorsState>({
+    resolver: yupResolver(RegisterProductor),
+  });
 
- const onSubmit = (data: IProductorsState) => {
-   dispatch(AddProductors(data));
-   router.push('/');
- };
- return {
-   register,
-   handleSubmit,
-   onSubmit,
-   errors,
- };
+  const onSubmit = (data: IProductorsState) => {
+    dispatch(AddProductors(data));
+    router.push('/');
+  };
+  return {
+    register,
+    handleSubmit,
+    onSubmit,
+    errors,
+  };
 }
