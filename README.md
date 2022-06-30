@@ -1,5 +1,5 @@
 # brain-agriculturee
- Brain agriculture using Next.js, Redux toolkit.
+ Brain agriculture using Next.js, Redux toolkit.  
  How to run this project?
 
  npm install 
