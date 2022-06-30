@@ -30,8 +30,6 @@ export const Main: React.FC = () => {
         culture = [...a, ...b, ...c, ...d];
   const { agriculturalState } = AgriculturalArea();
   const { vegetabelState }    = VegetabelArea();
-  console.log(agriculturalState)
-  console.log(vegetabelState)
   return (
     <section>
       <div
