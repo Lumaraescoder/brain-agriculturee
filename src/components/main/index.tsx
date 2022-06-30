@@ -25,12 +25,13 @@ export const Main: React.FC = () => {
   const { dataEstate, totalProoductors, hectarArea } = GraphDataByEstate();
   const { soyGraphdata:   a } =   SoyData(),
         { wheatGraphdata: b } =   WheatData(),
-        { cornGraphdata:  c }  =  CornData(),
-        { caneGraphdata:  d }  =  CaneData(),
+        { cornGraphdata:  c } =  CornData(),
+        { caneGraphdata:  d } =  CaneData(),
         culture = [...a, ...b, ...c, ...d];
   const { agriculturalState } = AgriculturalArea();
   const { vegetabelState }    = VegetabelArea();
-
+  console.log(agriculturalState)
+  console.log(vegetabelState)
   return (
     <section>
       <div

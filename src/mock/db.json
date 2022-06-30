@@ -11,6 +11,7 @@
       "total_agricultural_area": 300,
       "total_vegetabel_area": 170,
       "soy": "Soy",
+      "wheat": "Wheat", 
       "corn": "Corn", 
       "cane": "Sucar Cane"
     },
@@ -26,6 +27,7 @@
       "total_vegetabel_area": 100,
       "soy": "Soy",
       "wheat": "Wheat", 
+      "corn": "Corn", 
       "cane": "Sucar Cane"
     },
     {
@@ -37,6 +39,7 @@
       "cpf": "45551978899",
       "total_area_hectares_farm": 200,
       "total_agricultural_area": 100,
+      "total_vegetabel_area": 100,
       "soy": "Soy",
       "wheat": "Wheat", 
       "cane": "Sucar Cane"
@@ -51,67 +54,6 @@
       "total_agricultural_area": 100,
       "total_vegetabel_area": 100,
       "soy": "Soy",
-      "wheat": "Wheat", 
-      "corn": "Corn", 
-      "cane": "Sucar Cane"
-    },
-    {
-      "id": 5,
-      "fullname": "DeadPool",
-      "farm_name": "Palmeiras ricardo",
-      "city": "Fortaleza",
-      "estate": "Ceara",
-      "cpf": "45551978899",
-      "total_area_hectares_farm": 200,
-      "total_agricultural_area": 100,
-      "total_vegetabel_area": 100,
-      "soy": "Soy",
-      "wheat": "Wheat", 
-      "corn": "Corn", 
-      "cane": "Sucar Cane"
-    },
-    {
-      "id": 6,
-      "fullname": "DeadPool",
-      "farm_name": "Palmeiras ricardo",
-      "city": "Salvador",
-      "estate": "Bahia",
-      "cpf": "45551978899",
-      "total_area_hectares_farm": 200,
-      "total_agricultural_area": 100,
-      "total_vegetabel_area": 100,
-      "soy": "Soy",
-      "wheat": "Wheat", 
-      "corn": "Corn", 
-      "cane": "Sucar Cane"
-    },
-    {
-      "id": 7,
-      "fullname": "DeadPool",
-      "farm_name": "Palmeiras ricardo",
-      "city": "Fortaleza",
-      "estate": "Ceara",
-      "cpf": "45551978899",
-      "total_area_hectares_farm": 200,
-      "total_agricultural_area": 100,
-      "total_vegetabel_area": 100,
-      "soy": "",
-      "wheat": "Wheat", 
-      "corn": "Corn", 
-      "cane": "Sucar Cane"
-    }
-    ,
-    {
-      "id": 7, 
-      "fullname": "DeadPool",
-      "farm_name": "Palmeiras ricardo",
-      "city": "Fortaleza",
-      "estate": "Ceara",
-      "cpf": "45551978899",
-      "total_area_hectares_farm": 200,
-      "total_agricultural_area": 100,
-      "total_vegetabel_area": 100,
-      "soy": "",
       "wheat": "Wheat", 
       "corn": "Corn", 
       "cane": "Sucar Cane"

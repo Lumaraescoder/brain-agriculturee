@@ -3,7 +3,7 @@ import Alert from "@mui/material/Alert";
 import { editProductor } from "@redux/reducers/ProductorsThunk";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-import { IProductorsState } from "src/types/types";
+import { Data, IProductorsState } from "src/types/types";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { EditProductor } from "src/schemas/Schemas";
 import { useRouter } from "next/router";
@@ -18,15 +18,13 @@ const EditProductorss: React.FC = () => {
   const productors = useAppSelector(
     (state) => state.productorReducer.productors
   );
-  const productor = Array.isArray(productors)
+  const productor: any = Array.isArray(productors)
     ? productors?.find((post) => post.id == id)
     : id;
-  console.log(productor);
 
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm<IProductorsState>({
     resolver: yupResolver(EditProductor),
@@ -36,8 +34,7 @@ const EditProductorss: React.FC = () => {
     dispatch(showLoading());
     await dispatch(editProductor({ ...data, id }));
     await dispatch(hiddenLoading());
-    router.push('/')
-    reset();
+    router.push("/");
   };
 
   return (

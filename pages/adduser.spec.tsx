@@ -1,4 +1,4 @@
-import EditProductorss from "./[id]";
+import AddUsers from "./adduser";
 import { render } from "@testing-library/react";
 import configureStore, { MockStore } from "redux-mock-store";
 import { Provider } from "react-redux";
@@ -9,7 +9,7 @@ describe("Should render without crashing", () => {
     let store = mockStore();
     const { container } = render(
       <Provider store={store}>
-        <EditProductorss />
+        <AddUsers />
       </Provider>
     );
     expect(container).toBeTruthy();
