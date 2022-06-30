@@ -4,7 +4,7 @@
 
  npm install 
 
- Before start, just run our fake-api with:
+ Before start, just run our fake-api with:  
  npm run mock
 
  now you can start with:
