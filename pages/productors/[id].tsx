@@ -33,8 +33,8 @@ const EditProductorss: React.FC = () => {
   const onSubmit = async (data: IProductorsState) => {
     dispatch(showLoading());
     await dispatch(editProductor({ ...data, id }));
+    router.push("/332");
     await dispatch(hiddenLoading());
-    router.push("/");
   };
 
   return (
@@ -107,7 +107,6 @@ const EditProductorss: React.FC = () => {
             <div>
               <label className="text-gray-700 dark:text-gray-200">Estate</label>
               <input
-                type="text"
                 defaultValue={productor?.estate}
                 {...register("estate")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
@@ -124,7 +123,6 @@ const EditProductorss: React.FC = () => {
                 Hectares
               </label>
               <input
-                type="text"
                 defaultValue={productor?.total_area_hectares_farm}
                 {...register("total_area_hectares_farm")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
@@ -141,7 +139,6 @@ const EditProductorss: React.FC = () => {
                 Agricultural Area
               </label>
               <input
-                type="text"
                 defaultValue={productor?.total_area_hectares_farm}
                 {...register("total_agricultural_area")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
@@ -159,7 +156,7 @@ const EditProductorss: React.FC = () => {
               </label>
               <input
                 defaultValue={productor?.total_vegetabel_area}
-                type="text"
+                type="number"
                 {...register("total_vegetabel_area")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />

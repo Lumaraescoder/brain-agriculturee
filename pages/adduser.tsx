@@ -22,7 +22,7 @@ export const AddUsers: React.FC = () => {
 
   const onSubmitHandler = (data: IProductorsState) => {
     dispatch(AddProductors(data));
-    router.push('/');
+    router.push('/done');
     console.log(data,"===")
   };
 
@@ -78,7 +78,7 @@ export const AddUsers: React.FC = () => {
             <div>
               <label className="text-gray-700 dark:text-gray-200">City</label>
               <input
-                type="text"
+                
                 {...register("city")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
@@ -92,7 +92,7 @@ export const AddUsers: React.FC = () => {
             <div>
               <label className="text-gray-700 dark:text-gray-200">Estate</label>
               <input
-                type="text"
+                
                 {...register("estate")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
@@ -108,7 +108,7 @@ export const AddUsers: React.FC = () => {
                 Hectares
               </label>
               <input
-                type="text"
+               
                 {...register("total_area_hectares_farm")}
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
